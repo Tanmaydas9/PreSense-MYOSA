@@ -339,3 +339,6 @@ if __name__ == "__main__":
  #   --model cnn \
   #  --window 128 --step 16 \
  #   --epochs 40 --batch 64
+print("[PreSense] Paste into presense_inference.cpp FEAT_MIN / FEAT_MAX:")
+print("FEAT_MIN: " + ", ".join(f"{feat_min[n]:.6f}f" for n in FEATURES))
+print("FEAT_MAX: " + ", ".join(f"{feat_max[n]:.6f}f" for n in FEATURES))
