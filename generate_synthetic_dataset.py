@@ -307,3 +307,12 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+'''
+python generate_synthetic_dataset.py
+# or override defaults
+python generate_synthetic_dataset.py --cycles 500 --fs 100 --seed 42 \
+                                     --neuropathy-ratio 0.42 \
+                                     --out presense_synthetic_gait.csv
+'''
