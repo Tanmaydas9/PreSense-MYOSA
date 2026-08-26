@@ -1,0 +1,27 @@
+# ==============================================================================
+# PreSense - Predictive Sensory Augmentation Platform for Peripheral Neuropathy
+# Lead Developer: Tanmay Das
+# IEEE Sensors Council MYOSA-6.0 Ideation and Prototype Competition
+# ------------------------------------------------------------------------------
+# Python ML & Data Analysis Pipeline Requirements
+# Target: Offline training of the gait / foot-drop prediction model
+#         (MPU6050 + FSR + BMP180 feature windows) prior to TFLite export
+#         for on-device inference on the MYOSA ESP32.
+# Python: 3.10 / 3.11 recommended
+# ==============================================================================
+
+# --- Core data handling ---
+pandas==2.2.2
+numpy==1.26.4
+
+# --- Classical ML (baselines, feature selection, metrics) ---
+scikit-learn==1.4.2
+
+# --- Deep learning / TinyML export path ---
+# TensorFlow 2.15.x is the last widely supported line for the TFLite
+# Micro toolchain used to deploy the quantized model onto the ESP32.
+tensorflow==2.15.0
+
+# --- Visualization (gait waveforms, confusion matrices, feature plots) ---
+matplotlib==3.8.4
+seaborn==0.13.2
