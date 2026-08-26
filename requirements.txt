@@ -25,3 +25,16 @@ tensorflow==2.15.0
 # --- Visualization (gait waveforms, confusion matrices, feature plots) ---
 matplotlib==3.8.4
 seaborn==0.13.2
+
+###Usage
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# scipy==1.13.0                 # signal filtering / Butterworth for IMU denoising
+# tensorflow-model-optimization==0.8.0   # INT8 quantization-aware training
+# joblib==1.4.2                 # persist sklearn baselines
+# pyserial==3.5                 # streaming logs from the ESP32 during data collection
+# jupyterlab==4.1.8             # notebook-based EDA on gait windows
+
